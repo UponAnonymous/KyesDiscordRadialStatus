@@ -10,12 +10,11 @@
     aspect-ratio: 1;
     transform: translateX(-3px); /* Move the avatarDecoration to the right by 5px */
 }
-/*THOSE CHONKY SELECTORS
-Logic explanation because no one, not even i myself will understand this (im writing this in the middle of the night)
-First check if the highest parent has an svg that is the only child of its parent or that is not the phone indicator
-Then select the last one that fits the above criteria, only for users online on web and desktop at the same time
-Then check if that svg is of the specified colour, to decide which should be around the status ring
-*/
+[class^=avatarDecoration-34OC0G] {
+    width: 55px;
+    height: 55px;
+    transform: translateX(-3.5px);
+}
 /*Changes the border colour to Online if Online*/
 [class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]:first-child, 
 [class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper],
